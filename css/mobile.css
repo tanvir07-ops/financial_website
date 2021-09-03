@@ -37,6 +37,10 @@
     margin-top:2.8rem;
   }
 
+  #showcase .showcase-content a{
+    margin-bottom:2rem;
+  }
+
   #who {
     display:flex;
     flex-direction: column;

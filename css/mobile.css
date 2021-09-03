@@ -1,61 +1,81 @@
-/* #navbar{
+#what .items {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Align icon to left */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Smartphones */
+@media(max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  #showcase .showcase-content {
+    top: 65px;
+    margin-top:2.8rem;
+  }
+
+  #who {
     display:flex;
-    flex-direction:column;
-    text-align:center;
-    
-    
+    flex-direction: column;
+  }
 
-}
+  #who .who-img {
+   display:none;
+  }
 
-#navbar ul , #navbar ul li{
-  
-    display: flex !important;
-    justify-content:center;
-    margin-top:0.5rem;
+  #clients .items img {
+    width: 80%;
+  }
+
+  #clients .items div:last-child {
+    display: none;
+  }
+
+  #contact {
+    flex-direction: row;
+  }
+
+  #contact .map {
    
    
+    border-top: 4px solid #333;
+  }
 }
 
+@media(max-height: 568px) {
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: 140px;
+  }
 
-#showcase .showcase-content {
+  .l-heading {
+    font-size: 3rem;
+  }
 
-  margin-top:3rem;
-  
-} */
-
-
-@media(max-width: 768px) {
-    #navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #navbar .logo {
-        margin-bottom: 0.5rem;
-        text-align: center;
-      }
-  
-  
-  
-    #navbar ul {
-      padding: 0.5rem;
-    }
-  
-    #showcase .showcase-content{
-     
-      margin-top:3rem;
-      text-align: center;
-      
-    }
-
-
-    #showcase .showcase-content h1{
-        font-size:3rem;
-        text-align: center;
-    }
-
-    #showcase .showcase-content  p{
-        font-size:1.3rem;
-        line-height:1.3;
-        text-align: center;
-    }
+  .lead {
+    font-size: 1rem;
+  }
+}

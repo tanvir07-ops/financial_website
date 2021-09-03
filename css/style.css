@@ -48,7 +48,7 @@ p{
 
 
 
-.logo .text-primary{
+ .text-primary{
   color:#844EB0;
 
 
@@ -103,11 +103,14 @@ p{
 
     /* overlay */
     position:absolute;
-    top:60px;
+    top:65px;
     left:0px;
+    right:0px;
+    bottom:0px;
+    
   
 
-    background-color:rgba(1,1,1,0.4);
+    background-color:rgba(1,1,1,0.5);
 
 
   
@@ -143,4 +146,175 @@ p{
 .btn:hover{
     background-color:#D131A0;
 }
+
+
+/* what we do section */
+
+.container {
+ 
+    max-width: 1100px;
+    padding:0 2rem;
+    margin:auto;
+ 
+    overflow:auto;
+    
+
+}
+
+.text-center{
+   text-align:center;
+}
+
+.m-heading{
+
+    font-size: 2rem;
+    margin-bottom:0.75rem;
+    line-height:1.1;
+
+
+}
+
+
+.py-1{
+    padding:1.5rem 0;
+}
+
+/* nicher padding-2 and padding-3 jokhon ischa hobe tokhon use korbo tai likhe rekechi */
+
+.py-2{
+    padding:2rem 0;
+}
+
+.py-3{
+    padding:3rem 0;
+
+}
+
+#what .items{
+
+    display:flex;
+    padding:1rem;
+}
+
+#what .items .item{
+
+
+    padding:1rem;
+    text-align:center;
+    flex:1;
+}
+
+#what .items .item i{
+
+    background-color: #D131A0;
+    padding:1rem;
+    border-radius: 50%;
+    margin-bottom:1rem;
+}
+
+
+/* who section */
+
+#who{
+    display:flex;
+}
+
+#who .who-img,#who .who-text{
+  
+
+   /* er means holo #who er moddeh jekhono jei koyti div thakbe tara sobai soman kore vag hobe */
+   flex:1;
+}
+
+.who-img{
+
+
+    background: url("../img/people.jpg") no-repeat center center/cover;
+   
+}
+
+.bg-dark{
+
+    background-color: #333;
+    color:#f4f4f4;
+}
+
+.bg-light{
+
+    background-color: white;
+    color:#333;
+}
+
+.p-2{
+    padding:2rem;
+}
+
+.list{
+    margin:0.5rem 0;
+}
+
+.list li{
+    list-style-type: none;
+    border-bottom:1px dotted #444 ;
+    padding:0.5rem 0;
+}
+
+/* client section */
+
+ .items
+{
+    display: flex;
+}
+
+.items img{
+
+    display:block;
+    margin:auto;
+    width:60%;
+}
+
+#clients .m-heading{
+    text-align:center;
+}
+
+/* contact section */
+
+.bg-primary{
+   background-color:#587A31;
+   color:white;
+}
+
+#contact{
+    display:flex;
+}
+
+#contact .contact-form,#contact .map{
+    flex:1;
+
+    /* er means holo #contact er moddeh jekhono jei koyti div thakbe tara sobai soman kore vag hobe */
+}
+
+#contact .contact-form{
+    margin:0.75rem;
+}
+
+
+#contact .contact-form .form-group{
+
+
+    padding:0.5rem;
+}
+
+
+
+#contact label{
+
+
+   display:block;
+}
+
+#contact input,#contact textarea{
+    width:100%;
+}
+
 
